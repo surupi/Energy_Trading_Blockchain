@@ -114,3 +114,9 @@ We invite developers to contribute their expertise, users to engage in peer-to-p
 Thank you for joining us on this journey. The Energy Trading Blockchain project is more than just code; it's a collective effort towards a greener, more sustainable planet. Your involvement and contributions are instrumental in making this vision a reality.
 
 Let's build a future where energy is clean, accessible, and in the hands of the people.
+
+## PPT Video:
+
+https://github.com/surupi/Energy_Trading_Blockchain/assets/88026590/5cc8f019-8200-4b92-a136-57a802cdb07b
+
+## Demo Video
