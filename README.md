@@ -60,7 +60,7 @@ To run and contribute to the project, ensure you have the following prerequisite
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/energy-trading-blockchain.git
+    git clone https://github.com/surupi/energy-trading-blockchain.git
     cd energy-trading-blockchain
     ```
 
