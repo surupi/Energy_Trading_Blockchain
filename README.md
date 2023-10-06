@@ -42,7 +42,6 @@ The traditional energy sector is undergoing a transformative shift towards susta
 - **Promoting Energy Independence:** Participants gain greater control over their energy consumption and production, fostering a sense of energy independence and resilience.
 
 - **Fostering Innovation:** The decentralized nature of the platform encourages innovation in energy production, consumption, and storage, paving the way for new technologies and business models.
-- 
 
 ## Getting Started
 
