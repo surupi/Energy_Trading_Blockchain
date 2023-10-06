@@ -17,6 +17,8 @@ Welcome to the Energy Trading Blockchain project! This blockchain-based platform
 5. [Usage](#usage)
 6. [Architecture](#architecture)
 7. [Conclusion](#conclusion)
+8. [PPT Video](#ppt-video)
+9. [Demo Video](#demo-video)
 
 
 ## Introduction
