@@ -122,3 +122,5 @@ Let's build a future where energy is clean, accessible, and in the hands of the 
 https://github.com/surupi/Energy_Trading_Blockchain/assets/88026590/5cc8f019-8200-4b92-a136-57a802cdb07b
 
 ## Demo Video
+
+https://github.com/surupi/Energy_Trading_Blockchain/assets/88026590/2bc47a49-417d-478b-bf09-e497a40e5507
