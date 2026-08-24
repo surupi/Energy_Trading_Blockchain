@@ -34,15 +34,30 @@ contract EnergyDataContract is ChainlinkClient {
     DataPoint[] public productionDataPoints;
     DataPoint[] public consumptionDataPoints;
 
-    constructor() {
-        // Hardcoding the values
-        oracle = 0xec39A0C27b4E7F6c5a02F6AA52F7153Cf8C210f1;
+    constructor(address _oracle, address _linkToken, address _priceFeed) {
+        if (_oracle != address(0)) {
+            oracle = _oracle;
+        } else {
+            oracle = 0xec39A0C27b4E7F6c5a02F6AA52F7153Cf8C210f1;
+        }
+
+        if (_linkToken != address(0)) {
+            setChainlinkToken(_linkToken);
+        } else {
+            setChainlinkToken(0x779877A7B0D9E8603169DdbD7836e478b4624789);
+        }
+
+        if (_priceFeed != address(0)) {
+            ethPriceFeed = AggregatorV3Interface(_priceFeed);
+        } else {
+            ethPriceFeed = AggregatorV3Interface(0x694AA1769357215DE4FAC081bf1f309aDC325306);
+        }
+
         fee = 0.1 * 10 ** 18; // 0.1 LINK
-        setChainlinkToken(0x779877A7B0D9E8603169DdbD7836e478b4624789);
         productionJobId = stringToBytes32("f3d904c3519a43c69b0aba5b6d7a78f6");
         consumptionJobId = stringToBytes32("11e8ab573ede4b978b4dd0619c44d467");        
-        ethPriceFeed = AggregatorV3Interface(0x694AA1769357215DE4FAC081bf1f309aDC325306);
     }
+
 
     function requestEnergyProductionData() public {
         Chainlink.Request memory req = buildChainlinkRequest(

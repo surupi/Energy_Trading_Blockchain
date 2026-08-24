@@ -1,0 +1,27 @@
+# Python / Virtual Environment
+venv/
+*.pyc
+__pycache__/
+.pytest_cache/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Node & Frontend dependencies
+node_modules/
+.next/
+out/
+build/
+dist/
+
+# Truffle / Hardhat Artifacts
+backend/build/
+backend/contracts/build/
+artifacts/
+cache/
+
+# OS & Environment Files
+.DS_Store
+.env
+.env.local
+*.log
