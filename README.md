@@ -1,13 +1,14 @@
 # ⚡ Peer-to-Peer Energy Trading Blockchain & Streamlit DEX
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://energy-trading-blockchain.streamlit.app/)
+<a href="https://energy-trading-blockchain.streamlit.app/" target="_blank" rel="noopener noreferrer"><img src="https://static.streamlit.io/badges/streamlit_badge_black_white.svg" alt="Streamlit App"></a>
 [![Solidity](https://img.shields.io/badge/Solidity-^0.8.0-363636?style=for-the-badge&logo=solidity)](https://soliditylang.org/)
 [![Chainlink](https://img.shields.io/badge/Chainlink-Oracles-375BD2?style=for-the-badge&logo=chainlink)](https://chain.link/)
 [![Web3.py](https://img.shields.io/badge/Web3.py-6.15+-F7931A?style=for-the-badge&logo=ethereum)](https://web3py.readthedocs.io/)
 
 A decentralized Peer-to-Peer (P2P) energy trading platform that empowers prosumers (producers + consumers) to trade surplus renewable energy (Solar, Wind, Biomass) directly over an Ethereum microgrid using smart contracts, real-time IoT smart meter telemetry, and interactive Streamlit analytics.
 
-👉 **Live Demo:** [https://energy-trading-blockchain.streamlit.app/](https://energy-trading-blockchain.streamlit.app/)
+👉 **Live Demo:** <a href="https://energy-trading-blockchain.streamlit.app/" target="_blank" rel="noopener noreferrer">https://energy-trading-blockchain.streamlit.app/</a>
+
 
 ---
 
