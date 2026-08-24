@@ -1,43 +1,13 @@
 # ⚡ Peer-to-Peer Energy Trading Blockchain & Streamlit DEX
 
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://energy-trading-blockchain.streamlit.app/)
 [![Solidity](https://img.shields.io/badge/Solidity-^0.8.0-363636?style=for-the-badge&logo=solidity)](https://soliditylang.org/)
-[![Streamlit](https://img.shields.io/badge/Streamlit-1.30+-FF4B4B?style=for-the-badge&logo=streamlit)](https://streamlit.io/)
 [![Chainlink](https://img.shields.io/badge/Chainlink-Oracles-375BD2?style=for-the-badge&logo=chainlink)](https://chain.link/)
 [![Web3.py](https://img.shields.io/badge/Web3.py-6.15+-F7931A?style=for-the-badge&logo=ethereum)](https://web3py.readthedocs.io/)
 
 A decentralized Peer-to-Peer (P2P) energy trading platform that empowers prosumers (producers + consumers) to trade surplus renewable energy (Solar, Wind, Biomass) directly over an Ethereum microgrid using smart contracts, real-time IoT smart meter telemetry, and interactive Streamlit analytics.
 
----
-
-## 📋 Executive Summary & Project Report
-
-### 🎯 Key Objectives
-1. **Assessment of Blockchain's Feasibility:** Evaluate the suitability of Ethereum smart contracts in facilitating transparent, tamper-proof, and secure peer-to-peer energy trading in decentralized microgrids.
-2. **Decentralization Impact:** Analyze how peer-to-peer networks eliminate utility intermediaries, reducing transaction fees and improving green energy accessibility.
-3. **Smart Contract Architecture:** Implement secure Solidity contracts (`MarketContract.sol`, `EnergySwapToken.sol`, `UserContract.sol`, `EnergyDataContract.sol`) for automated execution, reentrancy-safe payments, and partial order fills.
-4. **Interactive Dashboard:** Build a high-performance Streamlit application for orderbook management, IoT telemetry simulation, and market analytics.
-
----
-
-### 🔬 Methodology & Implementation
-* **Smart Contract Layer:** Built using Solidity `^0.8.0` with OpenZeppelin security modules (`ReentrancyGuard`, `ERC20`). Deployed and tested using Truffle, Ganache, and Hardhat.
-* **IoT & Telemetry Integration:** Simulated 24-hour prosumer telemetry profiles (solar generation vs. household load) with automated smart contract listing triggers.
-* **Oracle Feeds:** Integrated Chainlink decentralized price feeds (`AggregatorV3Interface`) and off-chain telemetry verification contracts.
-* **Web3 DEX Control Center:** Streamlit Light Mode frontend powered by `web3.py` for real-time orderbook management, single-click purchases, and transaction ledger visualizer.
-
----
-
-### 💡 Key Findings & Industry Impact
-1. **Decentralization Enhances Transparency:** Blockchain provides an immutable, auditable transaction ledger, building trust between energy sellers and buyers.
-2. **Automated Efficiency:** Smart contracts remove third-party brokerages, lowering administrative overhead and facilitating instant settlement.
-3. **Scalability & Adoption:** Widespread adoption requires intuitive web interfaces and integration with physical smart meters.
-
----
-
-### 🔮 Future Roadmap & Recommendations
-* **IoT Smart Meter Integration:** Hardware integration with physical IoT energy meters via Chainlink oracle nodes.
-* **Regulatory & Microgrid Compliance:** Alignment with local grid distribution regulations and carbon credit offset tracking.
-* **Dynamic Tariff Algorithms:** Automated algorithmic pricing based on real-time microgrid supply/demand ratios.
+👉 **Live Demo:** [https://energy-trading-blockchain.streamlit.app/](https://energy-trading-blockchain.streamlit.app/)
 
 ---
 
@@ -52,7 +22,7 @@ A decentralized Peer-to-Peer (P2P) energy trading platform that empowers prosume
 
 ---
 
-## 🏗️ Architecture Overview
+## 🏗️ Architecture & Workflows
 
 ```mermaid
 graph TD
@@ -63,6 +33,15 @@ graph TD
     F[Chainlink Oracle Node] -->|Verified Telemetry Logs| C
     C -->|Web3.py Event Stream| G[Streamlit DEX App]
 ```
+
+---
+
+## 📋 Project Summary
+
+### 🎯 Key Objectives
+1. **Assessment of Blockchain's Feasibility:** Evaluate the suitability of Ethereum smart contracts in facilitating transparent, tamper-proof, and secure peer-to-peer energy trading in decentralized microgrids.
+2. **Decentralization Impact:** Analyze how peer-to-peer networks eliminate utility intermediaries, reducing transaction fees and improving green energy accessibility.
+3. **Smart Contract Architecture:** Implement secure Solidity contracts (`MarketContract.sol`, `EnergySwapToken.sol`, `UserContract.sol`, `EnergyDataContract.sol`) for automated execution, reentrancy-safe payments, and partial order fills.
 
 ---
 
@@ -77,22 +56,16 @@ graph TD
 
 ## ⚙️ Getting Started
 
-### Prerequisites
-
-Ensure you have the following installed on your system:
-- **Python 3.10+**
-- **Node.js** (v18+) & **npm** / **Truffle** or **Ganache-cli**
-
 ### Quick Start (One-Click Launcher)
 
-Run the included automated setup script to set up virtual environments, install dependencies, and launch the Streamlit app:
+Run the included automated setup script to set up virtual environments, install dependencies, and launch the Streamlit app locally:
 
 ```bash
 chmod +x setup.sh
 ./setup.sh
 ```
 
-### Manual Installation
+### Manual Local Setup
 
 1. **Clone the Repository:**
    ```bash
@@ -134,14 +107,8 @@ Energy_Trading_Blockchain/
 ├── setup.sh                         # Automated launcher script
 ├── requirements.txt                 # Python dependencies
 ├── .gitignore                       # Ignored build, venv, and binary artifacts
-└── README.md                        # Documentation & Project Report
+└── README.md                        # Project documentation
 ```
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to open an Issue or submit a Pull Request.
 
 ---
 
